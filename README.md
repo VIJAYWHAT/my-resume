@@ -5,9 +5,9 @@ This is basically a single-page website with auto-scrolling based on left-hand n
 
 <!-- MarkdownTOC autolink="true" -->
 
-- [Examples](#examples)
-
-- [Setup & Use](#setup--use)
+- [hugo Resume](#hugo-resume)
+  - [Examples](#examples)
+  - [Setup \& Use](#setup--use)
     - [Summary](#summary)
     - [Data files](#data-files)
     - [Projects](#projects)
@@ -15,8 +15,8 @@ This is basically a single-page website with auto-scrolling based on left-hand n
     - [Blog / Posts](#blog--posts)
     - [Template params](#template-params)
     - [Internationalization](#internationalization)
-- [CMS Editor with Netlify CMS](#cms-editor-with-netlify-cms)
-- [Credits](#credits)
+  - [CMS Editor with Netlify CMS](#cms-editor-with-netlify-cms)
+  - [Credits](#credits)
     - [Contributions](#contributions)
     - [Start Bootstrap Resume](#start-bootstrap-resume)
 
@@ -24,15 +24,15 @@ This is basically a single-page website with auto-scrolling based on left-hand n
 
 ## Examples
 
-![About You](https://raw.githubusercontent.com/eddiewebb/hugo-resume/master/images/about.png)
+![About You](https://raw.githubusercontent.com/techatpark/my-resume/master/images/about.png)
 
-![With optional Contact QR Code](https://raw.githubusercontent.com/eddiewebb/hugo-resume/master/images/qrcode.png)
+![With optional Contact QR Code](https://raw.githubusercontent.com/techatpark/my-resume/master/images/qrcode.png)
 
-![Highlight skills with dev icons](https://raw.githubusercontent.com/eddiewebb/hugo-resume/master/images/skills.png)
+![Highlight skills with dev icons](https://raw.githubusercontent.com/techatpark/my-resume/master/images/skills.png)
 
-![List featured projects](https://raw.githubusercontent.com/eddiewebb/hugo-resume/master/images/projects.png)
+![List featured projects](https://raw.githubusercontent.com/techatpark/my-resume/master/images/projects.png)
 
-![Searchable content](https://raw.githubusercontent.com/eddiewebb/hugo-resume/master/images/search.png)
+![Searchable content](https://raw.githubusercontent.com/techatpark/my-resume/master/images/search.png)
 
 See [Eddie's site](https://edwardawebb.com) for a live example.
 
@@ -41,7 +41,11 @@ See [Eddie's site](https://edwardawebb.com) for a live example.
 This theme uses a combination of a custom archetype `projects` and some data files to drive content.
 
 You can test the provided [exampleSite](exampleSite) after cloning with the command:
-`cd exampleSite;hugo -t hugo-resume --themesDir ../.. server`
+
+```sh
+cd exampleSite
+hugo -t my-resume --themesDir ../.. server
+```
 
 ### Summary
 Edit the main `contents/_index.md with a brief bio/summary`
@@ -49,9 +53,9 @@ Edit the main `contents/_index.md with a brief bio/summary`
 ### Data files
 Data files are used for simple content presented on the homepage.
 
-- [data/skills.json](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/data/skills.json)
-- [data/experience.json](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/data/experience.json)
-- [data/education.json](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/data/education.json)
+- [data/skills.json](https://github.com/techatpark/my-resume/blob/master/exampleSite/data/skills.json)
+- [data/experience.json](https://github.com/techatpark/my-resume/blob/master/exampleSite/data/experience.json)
+- [data/education.json](https://github.com/techatpark/my-resume/blob/master/exampleSite/data/education.json)
 
 
 ### Projects
@@ -67,7 +71,7 @@ Similar to posts, create them under `blog`. Include any thoughts, musiings, etc.
 
 ### Template params
 
-All personal information outside the above details is captured by params in [`config.toml`](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/config.toml), or can be edited in the "Settings" collection if using CMS.
+All personal information outside the above details is captured by params in [`config.toml`](https://github.com/techatpark/my-resume/blob/master/exampleSite/config.toml), or can be edited in the "Settings" collection if using CMS.
 
 ### Internationalization
 
@@ -78,7 +82,7 @@ Left navigation menu and section titles handle multiple languages. Use `defaultC
 ## CMS Editor with Netlify CMS
 **Does not require deployment to Netlify!**
 
-[Netlify CMS](https://www.netlifycms.org/) is an open source project that enables CMS like experience for static site generation tools like Hugo. This theme includes a fully working integration and guide in [exampleSite/static/admin](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/static/admin)
+[Netlify CMS](https://www.netlifycms.org/) is an open source project that enables CMS like experience for static site generation tools like Hugo. This theme includes a fully working integration and guide in [exampleSite/static/admin](https://github.com/techatpark/my-resume/blob/master/exampleSite/static/admin)
 
 ![CMS integration](/images/cms.png)
 
