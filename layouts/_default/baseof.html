@@ -11,7 +11,7 @@
     <meta property="og:image" content="{{ $preview_image.Permalink }}" />
     <meta property="og:title" content="{{ $preview_image.Title }}" />  
   {{ else }}
-    <meta property="og:image" content="{{ .Site.Params.profileImage | absURL }}" />
+    <meta property="og:image" content="https://github.com/{{ range where .Site.Params.handles "name" "GitHub" }}{{ replace (index (split .link "github.com/") 1) "/" ""}}{{ end }}.png" />
     <meta property="og:title" content="{{ .Site.Title }} | {{ .Title }}" />   
   {{ end }}
   <meta property="og:description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{else}}{{ .Description }}{{ end }}" />
