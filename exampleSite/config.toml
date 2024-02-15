@@ -9,7 +9,7 @@ enableGitInfo = false
 
 [params]
 address = "Rollinsford, NH"
-email = "email@domain.com"
+profileTitle = "Full Stack Developer"
 favicon = "/favicon.ico"
 firstName = "Eddie"
 lastName = "Webb"
