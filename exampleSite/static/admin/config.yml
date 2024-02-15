@@ -108,7 +108,7 @@ collections: # A list of collections the CMS should be able to edit
               - { label: 'Last Name', name: 'lastName', widget: 'string' }
               - { label: address, name: address, widget: 'string' }
               - { label: 'phone', name: 'phone', widget: 'string' }
-              - { label: 'email', name: 'email', widget: 'string' }
+              - { label: 'profileTitle', name: 'profileTitle', widget: 'string' }
               - label: 'Social Handles'
                 name: 'handles'
                 widget: 'list'
